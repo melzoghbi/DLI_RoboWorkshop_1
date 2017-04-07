@@ -14,11 +14,17 @@ The purpose of this lab is detect multiple an object from the live camera in Jet
     ```
     This will opens up the live camera in Jetson TX1.
 
-3. Hold up bottle in front of camera and look for rectangle on screen and LED0 lighting up.
+3. Hold up a bottle in front of the TX1 camera and look for rectangle on screen and LED0 lighting up.
 
      ![Bottle Detection](/tx1_labs/images/bottleDetection.png)
 
 4. Modify code to change which LEDs light up based on number of bottles.
+
+    The below figure shows our modified **toggleLEDS** method that turns on LEDs based on the number of detected objects. 
+    The logic turns one LED when one object is detected, turns two when two objects are detected and so on.
+
+  ![Multiple Bottle Detection](/tx1_labs/images/multipleObjectsLEDS_lab5.png)
+
 
 
 
