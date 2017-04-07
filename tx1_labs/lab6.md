@@ -1,4 +1,5 @@
-# Lab 5
+# Lab 6
+
 The purpose of this lab is how to use TensorRT for Better Performance
 
 1. Change to ~/detection/jetson-inference/data/networks
@@ -26,5 +27,21 @@ The purpose of this lab is how to use TensorRT for Better Performance
     ```
 
     The below figure shows the full commands for this lab to patch an existing trained model.
-    
+
     ![Lab 6-1](/tx1_labs/images/lab6a.png)
+
+
+5. Change to ~/detection/jetson-inference/build/aarch64/bin
+
+    ```
+    ./detectnet-camera bottlenet
+    ```
+
+6. Notice the 5x speedup in performance!
+
+7. Modify '~/detection/jetson-inference/detectnet-camera/detectnet-camera.cpp' file.
+
+8. Change LED algorithm as previous tasks
+
+9. Go to ~/detectnet/jetson-inference/build and type make to re-compile
+
